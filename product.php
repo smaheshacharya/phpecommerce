@@ -7,49 +7,48 @@ if(!isset($_SESSION['username']))
 ?>
 <?php
 
-include 'includes/header.php';
+include 'includes/product_header.php';
 ?>
 
 <body>
 
-	<!-- for header part -->
-	<header>
+<header>
 
-		<div class="logosec">
-			<div class="logo">GeeksForGeeks</div>
-			<img src=
+<div class="logosec">
+	<div class="logo">GeeksForGeeks</div>
+	<img src=
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
-				class="icn menuicn"
-				id="menuicn"
-				alt="menu-icon">
-		</div>
+		class="icn menuicn"
+		id="menuicn"
+		alt="menu-icon">
+</div>
 
-		<div class="searchbar">
-			<input type="text"
-				placeholder="Search">
-			<div class="searchbtn">
-			<img src=
+<div class="searchbar">
+	<input type="text"
+		placeholder="Search">
+	<div class="searchbtn">
+	<img src=
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
-					class="icn srchicn"
-					alt="search-icon">
-			</div>
-		</div>
+			class="icn srchicn"
+			alt="search-icon">
+	</div>
+</div>
 
-		<div class="message">
-			<div class="circle"></div>
-			<img src=
+<div class="message">
+	<div class="circle"></div>
+	<img src=
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
-				class="icn"
-				alt="">
-			<div class="dp">
-			<img src=
+		class="icn"
+		alt="">
+	<div class="dp">
+	<img src=
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
-					class="dpicn"
-					alt="dp">
-			</div>
-		</div>
+			class="dpicn"
+			alt="dp">
+	</div>
+</div>
 
-	</header>
+</header>
 
 	<div class="main-container">
 		<div class="navcontainer">
@@ -104,11 +103,13 @@ include 'includes/header.php';
 					</div>
 
 					<div class="nav-option logout">
+						<a href="logout.php">
 						<img src=
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
 							class="nav-img"
 							alt="logout">
 						<h3>Logout</h3>
+						</a>
 					</div>
 
 				</div>

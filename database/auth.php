@@ -8,19 +8,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $password = $_POST['psw'];
     // echo $username;
     
-    $sql = "SELECT id FROM sign_up WHERE
+    $sql = "SELECT id FROM login WHERE
      username='$username' AND password='$password'";
      $result = mysqli_query($conn, $sql);
+     echo $sql;
      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
      $count = mysqli_num_rows($result);
-      echo $count;
+      // echo $count;
      if($count == 1){
       $_SESSION["username"] = $username;
-        header("location:../product.php")
+      header("location:../product.php");
      }
+     
     
 
 }
+
 
 ?>
