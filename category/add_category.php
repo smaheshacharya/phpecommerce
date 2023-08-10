@@ -67,6 +67,7 @@ include '../includes/product_header.php';
 "https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
 							class="nav-img"
 							alt="articles">
+							
 						<h3> Articles</h3>
 					</div>
 
@@ -185,7 +186,30 @@ include '../includes/product_header.php';
 
 				<div class="report-body">
 				
+				<form action="" method="POST" enctype="multipart/form-data" >
+						<label for="cat_name">Categoory Name</label>
+						<input type="text" name="cat_name" id="cat_name">
 
+						<label for="cat_img">Image</label>
+						<input type="file" id="cat_img" name="cat_img">
+
+						<label for="cat_featured">Featured</label>
+						<input type="radio" name="cat_featured" id="cat_featured">
+						ON
+						<input type="radio" name="cat_featured" id="cat_featured">
+						OFF
+
+
+						<label for="cat_status">Status</label>
+						<input type="radio" name="cat_status" id="cat_status">
+						ON
+						<input type="radio" name="cat_status" id="cat_status">
+						OFF
+
+
+						<input type="submit" value="submit">
+
+				</form>
 					
 				</div>
 			</div>
